@@ -13,14 +13,6 @@ const MainResultData = document.querySelector('.main-result-data');
 const MainTimeCreate = document.querySelector('.main-time-create');
 const resultNumber = document.querySelector('.result-number');
 
-const ValName = document.querySelector('.val-name');
-const ValBirthday = document.querySelector('.val-brthd');
-const ValGender = document.querySelector('.val-gender');
-const ValResultData = document.querySelector('.val-timeCreate');
-const ValTimeCreate = document.querySelector('.val-timeCreate');
-const ValNumber = document.querySelector('.val-number');
-
-
 name.value = localStorage.getItem('name') || '';
 birthday.value = localStorage.getItem('birthday') || '';
 gender.value = localStorage.getItem('gender') || 'male';
@@ -50,26 +42,19 @@ submit.addEventListener('click', (e)=>{
     plrBody.style.display = 'block';
 
     MainName.innerHTML = name.value;
-    ValName.innerHTML = name.value;
 
     MainBirthday.innerHTML = birthday.value;
-    ValBirthday.innerHTML = birthday.value;
 
     resultNumber.innerHTML = `${randomInteger(201257, 284359)}`;
-    ValNumber.innerHTML = `${randomInteger(201257, 284359)}`;
 
     MainResultData.innerHTML = `${resultDataCreate(1)}`;
-    ValResultData.innerHTML = `${resultDataCreate(1)}`;
 
     MainTimeCreate.innerHTML = `${resultDataCreate(2)}`;
-    ValTimeCreate.innerHTML = `${resultDataCreate(2)}`;
 
     if (gender.value === 'male') {
         MainGender.innerHTML = `чол.`;
-        ValGender.innerHTML = `чол.`;
     } else {
         MainGender.innerHTML = `жін.`
-        ValGender.innerHTML = `жін.`;
     }
 });
 
