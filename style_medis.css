@@ -1,0 +1,178 @@
+html, body {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 15px;
+    width: 100vw;
+    padding: 0 30px;
+    background-color: gray;
+}
+
+/* =============================== */
+
+.plr-body {
+    width: 1000px;
+    /* border: 1px solid black; */
+    padding: 0 30px;
+    font-size: 16px;
+    height: 1500px;
+    position: relative;
+    background-color: white;
+}
+
+.plr-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+
+.plr-header .logo {
+    width: 250px;
+}
+
+.header-text {
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    margin: 0;
+}
+
+.header-span {
+    text-align: center;
+    font-size: 20px;
+    display: block;
+}
+
+.qr-code {
+    width: 150px;
+}
+
+.text2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    padding: 10px 0;
+}
+
+.main-name, .main-birthday, .main-gender {
+    display: inline;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.table-main, .table-main p {
+    display: inline;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.gender-text {
+    margin: 0 10px;
+
+}
+
+.main-birthday,  .main-name{
+    margin-left: 50px;
+    font-style: normal;
+}
+
+.text2-right {
+    text-align: right;
+}
+
+.text2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    bottom: 0px;
+}
+
+.result {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.result p{
+    display: inline;
+}
+
+.main-result-data {
+    display: inline;
+}
+
+.time-create {
+    margin: 10px 0;
+}
+
+.main-time-create {
+    display: inline;
+}
+
+.content {
+    width: 100%;
+}
+
+.end {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* ==================*/
+
+.valid {
+    width: 280px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px 30px;
+}
+
+.valid .logo {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: #019F99;
+}
+
+.valid .head {
+    font-size: 20px;
+    text-align: left;
+}
+
+.val-body {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 230px;
+    position: relative;
+}
+
+.val-body-head {
+    font-size: 20px;
+}
+
+.val-body-text {
+    margin: 10px 0;
+}
+
+.end-val {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 30px;
+}
