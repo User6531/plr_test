@@ -34,16 +34,17 @@ if (gender === 'male') {
 function resultDataCreate(count) {
     const now = new Date();
 
-    const dd = now.getDate();
-    if (dd < 10) dd = '0' + dd;
+    let dd = now.getDate();
+    if (dd < 10) dd = '0' + (dd-count);
+    if (dd == 00) dd = 31;
 
-    const mm = now.getMonth() + 1;
+    let mm = now.getMonth() + 1;
     if (mm < 10) mm = '0' + mm;
 
-    const yyyy = now.getFullYear();
+    let yyyy = now.getFullYear();
     if (yyyy < 10) yyyy = '0' + yyyy;
 
-    return dd-count + '.' + mm + '.' + yyyy + ' ' + randomInteger(9, 20) + ':' + randomInteger(10, 60);
+    return dd + '.' + mm + '.' + yyyy + ' ' + randomInteger(9, 20) + ':' + randomInteger(10, 60);
 }
 
 function randomInteger(min, max) {
