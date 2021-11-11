@@ -35,7 +35,8 @@ function resultDataCreate(count) {
     const now = new Date();
 
     let dd = now.getDate();
-    if (dd < 10) dd = '0' + (dd-count);
+    dd = (dd-count);
+    if (dd < 10) dd = '0' + dd;
     if (dd == 00) dd = 31;
 
     let mm = now.getMonth() + 1;
